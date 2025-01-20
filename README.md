@@ -20,7 +20,7 @@ Add this crate as a dependency in your `Cargo.toml`:
 
 ```toml
 [dependencies]
-json2struct = "0.1"
+json_to_struct = "0.1"
 ```
 
 ## Basic Usage
@@ -28,7 +28,7 @@ json2struct = "0.1"
 ### Generate a simple struct from JSON-like syntax:
 
 ```rust
-use json2struct::json2struct;
+use json_to_struct::json2struct;
 
 json2struct!(User {
     "first_name" => "John",

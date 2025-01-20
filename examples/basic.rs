@@ -1,4 +1,4 @@
-use json2struct::json2struct;
+use json_to_struct::json2struct;
 
 json2struct!(User @camel @store_json @debug {{
     "ainfo": 0,
