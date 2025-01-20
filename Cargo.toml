@@ -10,7 +10,7 @@ homepage = "https://github.com/abdullah-albanna/json_to_struct"
 documentation = "https://docs.rs/json_to_struct"
 readme = "README.md"
 keywords = ["json", "macro", "rust", "codegen", "struct"]
-categories = ["data-structures", "code-generation", "macros"]
+categories = ["data-structures"]
 
 [lib]
 proc-macro = true
