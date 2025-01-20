@@ -1,0 +1,25 @@
+[package]
+name = "json2struct"
+version = "0.1.0"
+edition = "2021"
+description = "Convert JSON into Rust structs for efficient and type-safe data management."
+license = "MIT"
+authors = ["Abdullah Albanna <abdu.albanna@proton.me>"]
+repository = "https://github.com/abdullah-albanna/json2struct"
+homepage = "https://github.com/abdullah-albanna/json2struct"
+documentation = "https://docs.rs/json2struct"
+readme = "README.md"
+keywords = ["json", "macro", "rust", "codegen", "struct"]
+categories = ["data-structures", "code-generation", "macros"]
+
+[lib]
+proc-macro = true
+name = "json2struct"
+
+[dependencies]
+serde = {version = "1", features = ["derive"]}
+serde_json = "1"
+syn = "2"
+quote = "1"
+proc-macro2 = "1"
+inflections = "1"
