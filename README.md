@@ -31,9 +31,9 @@ json_to_struct = "0.1"
 use json_to_struct::json2struct;
 
 json2struct!(User {
-    "first_name" => "John",
-    "last_name" => "Doe",
-    "age" => 30
+    "first_name": "John",
+    "last_name": "Doe",
+    "age": 30
 });
 ```
 
@@ -60,13 +60,13 @@ struct User {
 
 ```rust
 json2struct!(Company @debug @camel @derive(PartialEq) @store_json {
-    "company_name" => "Acme Corp",
-    "employees" => [
+    "company_name": "Acme Corp",
+    "employees": [
         {
-            "id" => 1,
-            "details" => {
-                "email" => "john@example.com",
-                "department" => "Engineering"
+            "id": 1,
+            "details": {
+                "email": "john@example.com",
+                "department": "Engineering"
             }
         }
     ]
